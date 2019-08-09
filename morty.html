@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400,400i,700&display=swap" rel="stylesheet">
+        <title>Online Morty Store</title>
+        <style>
+                        /* 
+            pink: #FAC9B8;
+            grey-blue: #C5DECD; 
+            */
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                font-family: 'Cardo', serif;
+                font-size: 20px;
+                /* background-image: radial-gradient(circle, rgb(255, 255, 73), #fffead); */
+                background-image: url("/rick-morty-nuggy.png");
+                background-color: rgb(255, 255, 90);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                padding-bottom: 30px;
+            }
+            h1,
+            h2,
+            h3 {
+                text-align: center;
+                font-family: 'Cardo', serif;
+                font-style:italic;
+            }
+            h1 {
+                padding-top: 30px;
+                padding-bottom: 0;
+                font-size: 300%;
+                font-weight: 200;
+                text-transform: uppercase;
+            }
+            h2 {
+                padding: 10px 0;
+                background-color: #97D6D8;
+                border-bottom: 1px solid #495159;
+            }
+            p {
+                text-align: center;
+                padding: 8px 0;
+                border-bottom: 1px solid #495159;
+            }
+            .wrapper {
+                display: grid;
+                grid-template-columns: 2fr 3fr 2fr;
+                grid-gap: 2em;
+            }
+            .div-1 {
+                grid-column: 1 / 4;
+                grid-row: 1;
+            }
+            .nested {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 2em;
+            }
+            .nested > div {
+                border: 1px solid #495159;
+            }
+            .nested img {
+                max-height: 350px;
+                display: block;
+                margin: 0 auto;
+            }
+            .nested p:first-of-type {
+                padding-top: 8px;
+            }
+            .img-container {
+                border-bottom: 1px solid #495159;
+                background-color: rgba(255, 255, 255, 0.95);
+            }
+            .price,
+            .see-more {
+                width: 50%;
+                display: inline-block;
+                float:left;
+                text-align: center;
+                padding: 9px 0;
+                font-size: 120%;
+            }
+            .price {
+                background-color: #97D6D8;
+            }
+            .see-more {
+                border-left: 1px solid black;
+                background-color: #F92A82;
+            }
+            .morty-div {
+                /* border-radius: 10px; */
+            }
+            .morty-div p {
+                
+                background-color: rgba(255, 255, 255, 0.95);
+                padding: 5px 25px;
+            }
+            .back {
+                grid-column: 1;
+                grid-row: 1;
+                justify-self: left;
+                align-self: center; 
+                margin-left: 30px;
+                padding: 5px;
+                background-color: #fff;
+                border: 2px solid #495159;
+                border-radius: 5px;
+                text-transform: uppercase;
+                color: #202020;
+                text-decoration: none;
+                transition: background-color 300ms;
+            }
+            .back:hover {
+                background-color: #97D6D8;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <a class="back" href="/mortys"><&nbsp;back</a>
+            <div class="div-1">
+                <h1>The Morty Store</h1>
+                <h3 class="slogan">Because every Rick needs a Morty</h3>
+            </div>
+            <div class="side-buffer"></div>
+            <div class="div-3 nested">
+                <div class="morty-div">
+                    <div class="img-container">
+                        <img src="/{%IMG%}" alt="">
+                    </div>
+                    <h2>{%NAME%}</h2>
+                    <p>Naivety: {%NAIVETY%}/10</p>
+                    <p>Annoyingness: {%ANNOYINGNESS%}/10</p>
+                    <p>Intelligence: {%INTELLIGENCE%}/10</p>
+                    <p>Obedience: {%OBEDIENCE%}/10</p>
+                    <p>Pain-in-my-ass: {%PAIN%}/10</p>
+                    <p>Description: {%DESCRIPTION%}</p>
+                    <div class="price">${%PRICE%}</div>
+                    <div class="see-more">Buy now</div>
+                </div>
+            </div>
+            <div class="side-buffer"></div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cardo:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    <title>Online Morty Store</title>
+    <style>
+      /* 
+            pink: #FAC9B8;
+            grey-blue: #C5DECD; 
+            old-blue: #A1E8CC;
+            */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        font-family: "Cardo", serif;
+        font-size: 20px;
+        /* background-image: radial-gradient(circle, rgb(255, 255, 90), #fffead); */
+        background-image: url("rick-morty-dancing.png");
+
+        background-repeat: no-repeat;
+        background-color: rgb(255, 255, 90);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-bottom: 30px;
+      }
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        font-family: "Cardo", serif;
+        font-style: italic;
+      }
+      h1 {
+        padding-top: 30px;
+        padding-bottom: 0;
+        font-size: 300%;
+        font-weight: 200;
+        text-transform: uppercase;
+      }
+      h2 {
+        padding: 10px 0;
+        background-color: #97d6d8;
+        border-bottom: 1px solid #495159;
+      }
+      p {
+        text-align: center;
+        padding: 8px 0;
+        border-bottom: 1px solid #495159;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-gap: 2em;
+      }
+      .div-1 {
+        grid-column: 1 / 4;
+      }
+      .nested {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
+      }
+      .nested > div {
+        border: 1px solid #495159;
+      }
+      .nested img {
+        max-height: 250px;
+        display: block;
+        margin: 0 auto;
+      }
+      .nested p:first-of-type {
+        padding-top: 8px;
+      }
+      .img-container {
+        border-bottom: 1px solid #495159;
+        background-color: rgba(255, 255, 255, 0.95);
+      }
+      .price,
+      .see-more {
+        width: 50%;
+        display: inline-block;
+        float: left;
+        text-align: center;
+        padding: 9px 0;
+        font-size: 130%;
+      }
+      .price {
+        background-color: #97d6d8;
+      }
+      .see-more {
+        color: black;
+        text-decoration: none;
+        background-color: #f92a82;
+        border-left: 1px solid black;
+        transition: background-color 200ms;
+      }
+      .see-more:hover {
+        background-color: #97d6d8;
+      }
+      .morty-div p {
+        background-color: rgba(255, 255, 255, 0.95);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="div-1">
+        <h1>The Morty Store</h1>
+        <h3 class="slogan">Because every Rick needs a Morty</h3>
+      </div>
+      <div class="side-buffer"></div>
+      <div class="div-3 nested">
+        {%CARDS%}
+
+        <!-- <div class="nested-div-2">
+                    <div class="img-container">
+                        <img src="/lawyer-morty.png" alt="cowboy-morty">
+                    </div>
+                    <h2>Cowboy Morty</h2>
+                    <p>Naivety: 10/10</p>
+                    <p>Annoyingness: 10/10</p>
+                    <div class="price">$1599</div>
+                    <div class="see-more">See More</div>
+                </div>
+                <div class="morty-div">
+                    <div class="img-container">
+                        <img src="./img/mortys/cowboy-morty.png" alt="cowboy-morty">
+                    </div>
+                    <h2>Cowboy Morty</h2>
+                    <p>Naivety: 10/10</p>
+                    <p>Annoyingness: 10/10</p>
+                    <div class="price">$1599</div>
+                    <div class="see-more">See more</div>
+                </div>
+                <div class="morty-div">
+                    <div class="img-container">
+                        <img src="./img/mortys/cronenberg-morty.png" alt="cowboy-morty">
+                    </div>
+                    <h2>Cronenberg Morty</h2>
+                    <p>Naivety: 10/10</p>
+                    <p>Annoyingness: 10/10</p>
+                    <div class="price">$1599</div>
+                    <div class="see-more">See More</div>
+                </div> -->
+      </div>
+      <div class="side-buffer"></div>
+    </div>
+    <script src="public/js/index.js"></script>
+  </body>
+</html>

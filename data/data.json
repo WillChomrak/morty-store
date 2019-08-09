@@ -1,0 +1,123 @@
+[
+    {
+        "id": "0",
+        "name": "Campaign-Manager Morty",
+        "img": "campagin-manager-morty.png",
+        "naivety": "4",
+        "annoyingness": "7",
+        "intelligence": "4",
+        "obedience": "3",
+        "pain": "10",
+        "price": "1399",
+        "description": "Current whereabouts unknown."
+    },
+    {
+        "id": "1",
+        "name": "Blue Shirt Morty",
+        "img": "blue-shirt-morty.png",
+        "naivety": "10",
+        "annoyingness": "10",
+        "intelligence": "1",
+        "obedience": "8",
+        "pain": "10",
+        "price": "3999",
+        "description": "If you are sick and tired of your boring old yellow shirt Morty, this Morty is perfect to bring some new excitement to your adventures."
+    },
+    {
+        "id": "2",
+        "name": "Cronenberg Morty",
+        "img": "cronenberg-morty.png",
+        "naivety": "9",
+        "annoyingness": "10",
+        "intelligence": "1",
+        "obedience": "8",
+        "pain": "11",
+        "price": "599",
+        "description": ""
+    },
+    {
+        "id": "3",
+        "name": "Hammerhead Morty",
+        "img": "hammerhead-morty.png",
+        "naivety": "10",
+        "annoyingness": "9",
+        "intelligence": "1",
+        "obedience": "8",
+        "pain": "9",
+        "price": "1299",
+        "description": "Every problem is a nail when this Morty is around."
+    },
+    {
+        "id": "4",
+        "name": "Lawyer Morty",
+        "img": "lawyer-morty.png",
+        "naivety": "10",
+        "annoyingness": "7",
+        "intelligence": "1",
+        "obedience": "10",
+        "pain": "7",
+        "price": "1999",
+        "description": "In a cheap two-button suit, this Morty is the perfect accessory for any formal occation. A particularly fun Morty. Ask him about his Pog collection."
+    },
+    {
+        "id": "5",
+        "name": "Morty-Town Loco Morty",
+        "img": "morty-street-loco-morty.png",
+        "naivety": "10",
+        "annoyingness": "10",
+        "intelligence": "1",
+        "obedience": "3",
+        "pain": "11",
+        "price": "999",
+        "description": "This poor Morty fell on hard times after losing his Rick to a particularly bad bout of hangover diarrhea. Buy this Morty to give him a better life and an Earth to be stupid on. Comes with a loco face tattoo."
+    },
+    {
+        "id": "6",
+        "name": "Left-Handed Morty",
+        "img": "left-handed-morty.png",
+        "naivety": "11",
+        "annoyingness": "10",
+        "intelligence": "1",
+        "obedience": "9",
+        "pain": "9",
+        "price": "899",
+        "description": ""
+    },
+    {
+        "id": "7",
+        "name": "Cowboy Morty",
+        "img": "cowboy-morty.png",
+        "naivety": "10",
+        "annoyingness": "8",
+        "intelligence": "1",
+        "obedience": "9",
+        "pain": "9",
+        "price": "2999",
+        "description": "This little cowpoke is a great partner for any adventure. Comes with multiple fun catch-phrases."
+    },
+    {
+        "id": "8",
+        "name": "Normal Morty",
+        "img": "morty.png",
+        "naivety": "10",
+        "annoyingness": "10",
+        "intelligence": "1",
+        "obedience": "9",
+        "pain": "9",
+        "price": "999",
+        "description": "This is the standard Morty model you know and don't quite love."
+    },
+    {
+        "id": "9",
+        "name": "Slick Morty",
+        "img": "slick-morty.png",
+        "naivety": "10",
+        "annoyingness": "11",
+        "intelligence": "1",
+        "obedience": "5",
+        "pain": "11",
+        "price": "1599",
+        "description": "This extra-annoying Morty ..."
+    }
+    
+]
